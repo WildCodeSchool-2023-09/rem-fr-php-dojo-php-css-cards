@@ -1,0 +1,54 @@
+@import 'theme.css';
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media screen and (width > 768px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 1px 10px -4px gray;
+    margin: 0;
+}
+
+figure>img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: var(--spacing2);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+@media screen and (width > 768px) {
+    figure {
+        flex-direction: row;
+    }
+
+    figure>img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    figcaption {
+        width: 50%;
+    }
+}
+
+figcaption>div>div {
+    color: var(--intermediate);
+
+}
