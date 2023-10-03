@@ -1,0 +1,32 @@
+@import 'theme.css';
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+
+figure{
+    display: flex;
+    box-shadow: 4px 1px 10px -4px gray;
+    margin:0;
+}
+
+figure > img {
+    width:50%;
+    object-fit: cover;
+}
+
+
+figcaption {
+    padding: var(--spacing2);
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    justify-content: space-between;
+
+}
+figcaption > div > div{
+    color: var(--intermediate);
+
+}
